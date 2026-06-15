@@ -103,6 +103,22 @@ header {
     transform: translateX(-50%);
 }
 
+.orb-projects {
+    background: radial-gradient(circle, var(--gradient-peach), transparent);
+    bottom: -100px;
+    right: -100px;
+    width: 400px;
+    height: 400px;
+}
+
+.orb-contact {
+    background: radial-gradient(circle, var(--gradient-lavender), transparent);
+    top: 100px;
+    left: -100px;
+    width: 500px;
+    height: 500px;
+}
+
 .profile-img {
     width: 120px;
     height: 120px;
