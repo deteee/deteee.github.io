@@ -3,24 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio</title>
-    <meta name="description" content="Personal portfolio and resume site">
+    <title>Personal Portfolio | Editorial Edition</title>
+    <meta name="description" content="Personal portfolio and resume site with an editorial design">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <header>
+    <header>
+        <div class="orb orb-hero"></div>
+        <div class="container">
             <img src="assets/profile.jpg" alt="Profile Picture" class="profile-img">
             <h1>Welcome to my Page</h1>
             <p class="tagline">Developer & Explorer</p>
-            <a href="assets/cv.pdf" class="btn" target="_blank">Download Resume / CV</a>
-        </header>
+            <div class="cta-group">
+                <a href="assets/cv.pdf" class="btn-primary" target="_blank">Download Resume / CV</a>
+            </div>
+        </div>
+    </header>
 
+    <main class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p>
+            <p style="max-width: 600px;">
                 Hi there! I'm a developer passionate about building clean, efficient, and user-friendly applications. 
-                I enjoy solving complex problems and constantly learning new technologies.
+                I enjoy solving complex problems and constantly learning new technologies. My work focuses on 
+                the intersection of minimalist design and high-performance engineering.
             </p>
         </section>
 
@@ -29,11 +35,15 @@
             <div class="grid">
                 <div class="card">
                     <h3>Project One</h3>
-                    <p>A brief description of a project you've worked on. Highlight the key technologies used.</p>
+                    <p>A brief description of a project you've worked on. Highlight the key technologies used and the editorial impact.</p>
                 </div>
                 <div class="card">
                     <h3>Project Two</h3>
-                    <p>Another project description. Showcase your skills and what you achieved.</p>
+                    <p>Another project description. Showcase your skills and what you achieved in this atmospheric case study.</p>
+                </div>
+                <div class="card">
+                    <h3>Project Three</h3>
+                    <p>Exploring new frontiers in voice-AI and minimalist web interfaces.</p>
                 </div>
             </div>
         </section>
@@ -41,12 +51,14 @@
         <section id="contact">
             <h2>Contact</h2>
             <p>Feel free to reach out to me for collaborations or just a friendly chat!</p>
-            <p>Email: <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+            <p style="margin-top: 16px;">Email: <a href="mailto:your.email@example.com" style="color: var(--color-ink); font-weight: 500;">your.email@example.com</a></p>
         </section>
+    </main>
 
-        <footer>
+    <footer>
+        <div class="container">
             <p>&copy; 2026 Personal Portfolio. Hosted on GitHub Pages.</p>
-        </footer>
-    </div>
+        </div>
+    </footer>
 </body>
 </html>
