@@ -3,17 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Personal Portfolio | Editorial Edition</title>
-    <meta name="description" content="Personal portfolio and resume site with an editorial design">
+    <title>Haeyul | CS at SNU</title>
+    <meta name="description" content="Personal portfolio of Haeyul, a Computer Science student at Seoul National University.">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#about">About Me</a></li>
+                <li><a href="#cv">CV / Resume</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
     <header>
         <div class="orb orb-hero"></div>
         <div class="container">
             <img src="assets/profile.jpg" alt="Profile Picture" class="profile-img">
-            <h1>Welcome to my Page</h1>
-            <p class="tagline">Developer & Explorer</p>
+            <h1>Haeyul</h1>
+            <p class="tagline">Sophomore @ Seoul National University | CS & Engineering</p>
             <div class="cta-group">
                 <a href="assets/cv.pdf" class="btn-primary" target="_blank">Download Resume / CV</a>
             </div>
@@ -23,44 +35,89 @@
     <main class="container">
         <section id="about">
             <h2>About Me</h2>
-            <p style="max-width: 600px;">
-                Hi there! I'm a developer passionate about building clean, efficient, and user-friendly applications. 
-                I enjoy solving complex problems and constantly learning new technologies. My work focuses on 
-                the intersection of minimalist design and high-performance engineering.
+            <p style="max-width: 700px;">
+                I am a sophomore student at **Seoul National University (서울대학교)**, majoring in **Computer Science & Engineering (컴퓨터공학과)**. 
+                I am passionate about exploring the depths of computer science, from low-level systems to modern AI applications. 
+                I enjoy building tools that solve practical problems and constantly refining my engineering skills.
             </p>
         </section>
 
-        <section id="projects">
+        <section id="cv">
+            <h2>CV / Resume</h2>
+            <div class="grid">
+                <div class="card">
+                    <h3>Education</h3>
+                    <p><strong>Seoul National University</strong></p>
+                    <p>B.S. in Computer Science & Engineering</p>
+                    <p>Sophomore (2학년 재학 중)</p>
+                </div>
+                <div class="card">
+                    <h3>Skills</h3>
+                    <div class="skill-category">
+                        <p><strong>Programming Languages</strong></p>
+                        <span class="badge">C++</span>
+                        <span class="badge">C</span>
+                        <span class="badge">Python</span>
+                        <span class="badge">Java</span>
+                    </div>
+                    <div class="skill-category">
+                        <p><strong>Tools & Environment</strong></p>
+                        <span class="badge">Git</span>
+                        <span class="badge">GitHub</span>
+                        <span class="badge">VS Code</span>
+                        <span class="badge">ComfyUI</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" style="position: relative; overflow: hidden;">
+            <div class="orb orb-projects"></div>
             <h2>Featured Projects</h2>
             <div class="grid">
                 <div class="card">
-                    <h3>Project One</h3>
-                    <p>A brief description of a project you've worked on. Highlight the key technologies used and the editorial impact.</p>
+                    <h3>Project 1: OOP Course Project</h3>
+                    <p><strong>C++</strong></p>
+                    <p>Developed a comprehensive system focused on Object-Oriented Programming principles, implementing complex class designs, inheritance, and polymorphism.</p>
                 </div>
                 <div class="card">
-                    <h3>Project Two</h3>
-                    <p>Another project description. Showcase your skills and what you achieved in this atmospheric case study.</p>
+                    <h3>Project 2: Mini Card Game</h3>
+                    <p><strong>C</strong></p>
+                    <p>Developed a terminal-based card game utilizing pointers and structured game loops to manage game state and user interaction.</p>
                 </div>
                 <div class="card">
-                    <h3>Project Three</h3>
-                    <p>Exploring new frontiers in voice-AI and minimalist web interfaces.</p>
+                    <h3>Project 3: Wordle & Solver</h3>
+                    <p><strong>Python</strong></p>
+                    <p>A 1st-year team project. Built a Wordle clone combined with an Information Theory-based solver to suggest the most optimal next moves.</p>
                 </div>
             </div>
+        </section>
+
+        <section id="courses">
+            <h2>Upcoming Courses</h2>
+            <p style="margin-bottom: var(--spacing-lg);">Courses I plan to take in the upcoming semesters:</p>
+            <ul class="course-list">
+                <li class="course-item">알고리즘 (Algorithms)</li>
+                <li class="course-item">오토마타 (Automata Theory)</li>
+                <li class="course-item">인공지능 기초 (Introduction to AI)</li>
+            </ul>
         </section>
 
         <section id="contact" style="position: relative; overflow: hidden;">
             <div class="orb orb-contact"></div>
             <h2>Contact</h2>
-            <p>Feel free to reach out to me for collaborations or just a friendly chat!</p>
-            <p style="margin-top: 16px;">Email: <a href="mailto:your.email@example.com" style="color: var(--color-ink); font-weight: 500;">your.email@example.com</a></p>
+            <p>I'm always open to discussing new projects or opportunities.</p>
+            <div style="margin-top: 24px;">
+                <p><strong>Email:</strong> <a href="mailto:haeyul6101@snu.ac.kr" style="color: var(--color-ink); font-weight: 500;">haeyul6101@snu.ac.kr</a></p>
+                <p><strong>GitHub:</strong> <a href="https://github.com/deteee" target="_blank" style="color: var(--color-ink); font-weight: 500;">github.com/deteee</a></p>
+            </div>
         </section>
     </main>
 
     <footer>
         <div class="container">
-            <p>&copy; 2026 Personal Portfolio. Hosted on GitHub Pages.</p>
+            <p>&copy; 2026 Haeyul. Hosted on GitHub Pages.</p>
         </div>
     </footer>
 </body>
 </html>
-
