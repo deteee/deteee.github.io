@@ -148,7 +148,31 @@ nav a:hover {
     font-weight: 500;
 }
 
-/* Atmospheric Orb */
+.ai-usage details {
+    background-color: var(--color-hairline-soft);
+    padding: var(--spacing-base);
+    border-radius: var(--radius-lg);
+    margin-top: var(--spacing-base);
+    cursor: pointer;
+}
+
+.ai-usage summary {
+    font-weight: 500;
+    color: var(--color-ink);
+    margin-bottom: 8px;
+}
+
+.ai-usage pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    font-size: 14px;
+    background: var(--color-surface-card);
+    padding: var(--spacing-base);
+    border-radius: var(--radius-md);
+    border: 1px solid var(--color-hairline);
+    margin-top: 8px;
+    font-family: monospace;
+}
 .orb {
     position: absolute;
     width: 600px;
